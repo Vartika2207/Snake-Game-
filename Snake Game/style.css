@@ -1,0 +1,38 @@
+html {
+  font-size: 62%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #000;
+}
+
+#game-board {
+  background-color: #ccc;
+  width: 100vmin;
+  height: 100vmin;
+  display: grid;
+  /* to divide screen in 21 rows and 21 cols of exact same wigth and hight */
+  grid-template-rows: repeat(21, 1fr); /*1 fr*/
+  grid-template-columns: repeat(21, 1fr);
+}
+
+.snake {
+  background-color: rgb(67, 5, 75);
+  border: 0.25vmin solid black;
+  border-radius: .7rem;
+}
+
+.food {
+  background-color: rgb(203, 231, 42);
+  border: 0.25vmin solid black;
+  border-radius: 50%;
+}
