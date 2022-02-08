@@ -10,7 +10,10 @@ let gameOver =false;
 
 function main(currentTime){
     if(gameOver){
-        return alert('You lost !!')
+        if(confirm('You lost!! Press ok to restart')){
+            window.location = '/' //equal current location we are on, will restart the page
+        }
+        return //on same state
     }
     
     window.requestAnimationFrame(main);
